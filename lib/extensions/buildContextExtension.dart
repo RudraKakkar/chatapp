@@ -10,4 +10,13 @@ extension BuildContextExtension on BuildContext{
     }
 
   }
+
+  double getWidth({double percentage =1 }){
+    return MediaQuery.of(this).size.width * percentage;
+    
+  }
+  double getHight({double percentage =1 }){
+    return MediaQuery.of(this).size.height * percentage;
+  }
 }
+
